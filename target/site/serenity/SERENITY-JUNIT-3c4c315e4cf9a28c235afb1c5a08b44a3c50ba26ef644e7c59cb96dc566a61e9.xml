@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="4" name="As a user I would like to check the CRUD functionality of reqres.in" skipped="0" tests="6" time="6.96" timestamp="2022-06-18T17:41:28.658+02:00[Europe/Paris]"><testcase name="I want to create a user to the application"/><testcase name="I want to read the newly created user from the application"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+in.reqres.reqresinfo.UsersSteps.getUserByID(UsersSteps.java:48)&#13;
+in.reqres.cucumber.steps.MyStepdefs.iSendGETRequestToTheApplicationToReadNewlyCreatedUser(MyStepdefs.java:56)&#13;
+✽.When I send GET request to the application to read newly created user(UsersCRUDtest.feature:12)&#13;
+</system-err></testcase><testcase name="I want to update the newly created user using PUT from the application"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+in.reqres.reqresinfo.UsersSteps.getUserByID(UsersSteps.java:48)&#13;
+in.reqres.cucumber.steps.MyStepdefs.iVerifyInTheResponseIfItHasNewlyCreatedUserIsUpdated(MyStepdefs.java:81)&#13;
+✽.And I verify in the response if it has newly created user is updated(UsersCRUDtest.feature:20)&#13;
+</system-err></testcase><testcase name="I want to update the newly created user using PATCH from the application"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+in.reqres.reqresinfo.UsersSteps.getUserByID(UsersSteps.java:48)&#13;
+in.reqres.cucumber.steps.MyStepdefs.iVerifyInTheResponseIfItHasNewlyCreatedUserIsUpdated(MyStepdefs.java:81)&#13;
+✽.And I verify in the response if it has newly created user is updated(UsersCRUDtest.feature:26)&#13;
+</system-err></testcase><testcase name="I want to delete the newly created user from the application"><failure message="1 expectation failed.&#10;Expected status code &lt;404&gt; but was &lt;204&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;404&gt; but was &lt;204&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;
+in.reqres.cucumber.steps.MyStepdefs.iVerifyIfNewlyCreatedUserIsDeleted(MyStepdefs.java:101)&#13;
+✽.And I verify if newly created user is deleted(UsersCRUDtest.feature:32)&#13;
+</system-err></testcase><testcase name="I want to read all users from the application and verify some items from response"/></testsuite>
