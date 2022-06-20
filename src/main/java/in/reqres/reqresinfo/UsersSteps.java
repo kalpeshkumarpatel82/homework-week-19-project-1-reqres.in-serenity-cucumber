@@ -45,7 +45,6 @@ public class UsersSteps {
                 .pathParam("userID", userID)
                 .get(EndPoints.GET_USER_BY_ID)
                 .then()
-                .statusCode(200)
                 .extract().path("");
         return userMap;
     }

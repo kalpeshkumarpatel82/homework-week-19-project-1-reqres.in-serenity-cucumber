@@ -32,7 +32,7 @@ public class MyStepdefs {
 
     @Given("^I am on homepage of the given url$")
     public void iAmOnHomepageOfTheGivenUrl() {
-        HashMap<String, ?> tokenMap = usersSteps.loginUser(email, password);
+       usersSteps.loginUser(email, password);
     }
 
     @When("^I send POST request to the the application using a valid payload to create a User$")
@@ -55,11 +55,6 @@ public class MyStepdefs {
     public void iSendGETRequestToTheApplicationToReadNewlyCreatedUser() {
         HashMap<String, ?> userMap = usersSteps.getUserByID(userID);
         Assert.assertThat(userMap, hasValue(name));
-    }
-
-    @Then("^I status code (\\d+)$")
-    public void iStatusCode(int code) {
-        response.assertThat().statusCode(code);
     }
 
     @And("^I verify in the response if it has newly created user name$")

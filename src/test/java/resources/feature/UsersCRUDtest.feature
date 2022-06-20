@@ -10,25 +10,25 @@ Feature: As a user I would like to check the CRUD functionality of reqres.in
   Scenario: I want to read the newly created user from the application
     Given I am on homepage of the given url
     When I send GET request to the application to read newly created user
-    Then I status code 200
+    Then I get status code 200
     And I verify in the response if it has newly created user name
 
   Scenario: I want to update the newly created user using PUT from the application
     Given I am on homepage of the given url
     When I send PUT request to the application to update newly created user
-    Then I status code 200
+    Then I get status code 200
     And I verify in the response if it has newly created user is updated
 
   Scenario: I want to update the newly created user using PATCH from the application
     Given I am on homepage of the given url
     When I send PATCH request to the application to update newly created user
-    Then I status code 200
+    Then I get status code 200
     And I verify in the response if it has newly created user is updated
 
   Scenario: I want to delete the newly created user from the application
     Given I am on homepage of the given url
     When I send DELETE request to the application to delete newly created user
-    Then I status code 204
+    Then I get status code 204
     And I verify if newly created user is deleted
 
   Scenario: I want to read all users from the application and verify some items from response
